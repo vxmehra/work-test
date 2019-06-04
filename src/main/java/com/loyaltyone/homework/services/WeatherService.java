@@ -18,7 +18,7 @@ public class WeatherService {
 	}
 	
 	public WeatherData getWeatherDetails(String cityName) {
-		String uri = "http://api.openweathermap.org/data/2.5/weather?q="+ cityName + "&units=metric&APPID=6eff973eef5c29cac9e3a61b096e7ca8";
+		String uri = "http://api.openweathermap.org/data/2.5/weather?q="+ cityName + "&units=metric&APPID=YOUR_ID";
 		ResponseEntity<WeatherData> data = null;
 		try {
 			data = restTemplate.getForEntity(uri, WeatherData.class);
